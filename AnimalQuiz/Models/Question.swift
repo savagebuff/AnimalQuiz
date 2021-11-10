@@ -14,14 +14,14 @@ enum ResponseType {
 struct Question {
     let text: String
     let type: ResponseType
-    let answer: [Answer]
+    let answers: [Answer]
 }
 
 extension Question {
     static func getQuestion() -> [Question] {
         return [
             Question(text: "Какую пищу вы предпочитаете?",
-                     type: .single, answer: [
+                     type: .single, answers: [
                         Answer(text: "Стейк", type: .dog),
                         Answer(text: "Рыба", type: .cat),
                         Answer(text: "Морковь", type: .rabbit),
@@ -29,7 +29,7 @@ extension Question {
                      ]
             ),
             Question(text: "Что вы любите делать??",
-                     type: .multiple, answer: [
+                     type: .multiple, answers: [
                         Answer(text: "Плавать", type: .dog),
                         Answer(text: "Спать", type: .cat),
                         Answer(text: "Обниматься", type: .rabbit),
@@ -37,11 +37,11 @@ extension Question {
                      ]
             ),
             Question(text: "Любите ли вы поездки на машине",
-                     type: .range, answer: [
-                        Answer(text: "Обожаю", type: .dog),
-                        Answer(text: "Обожаю", type: .cat),
-                        Answer(text: "Ненавижу", type: .rabbit),
-                        Answer(text: "Ненавижу", type: .turtle)
+                     type: .range, answers: [
+                        Answer(text: "🔥", type: .dog),
+                        Answer(text: "❤️", type: .cat),
+                        Answer(text: "😐", type: .rabbit),
+                        Answer(text: "👎", type: .turtle)
                      ]
             )
         ]
