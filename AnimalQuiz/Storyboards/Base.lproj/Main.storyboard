@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,6 +31,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Начать опрос">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="F7E-xW-2q7" kind="presentation" modalPresentationStyle="fullScreen" id="XGa-uV-zlF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -80,5 +84,67 @@
             </objects>
             <point key="canvasLocation" x="35" y="98"/>
         </scene>
+        <!--Вопрос №-->
+        <scene sceneID="LOc-55-td9">
+            <objects>
+                <viewController id="OPl-mE-cb2" customClass="QuestionViewController" customModule="AnimalQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KTM-V0-XmR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="IJj-au-W7m"/>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Вопрос №" id="syp-MU-zMa">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Kft-kD-i2u"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="4di-5W-hLs" kind="show" identifier="showResult" id="gy7-wP-J8Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuE-RY-HOM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1740" y="97.601199400299862"/>
+        </scene>
+        <!--Результаты-->
+        <scene sceneID="4R0-aR-TQb">
+            <objects>
+                <viewController id="4di-5W-hLs" customClass="FinalViewController" customModule="AnimalQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nnV-lz-3bl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nAf-nC-eWN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Результаты" id="j5K-so-utv">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="dqA-1S-dZu"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VLb-EA-dRY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2598" y="98"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hB6-vY-JLP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F7E-xW-2q7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="dq7-VG-7ma">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OPl-mE-cb2" kind="relationship" relationship="rootViewController" id="HCR-AP-mq3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L5V-Sg-aBl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868" y="98"/>
+        </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
