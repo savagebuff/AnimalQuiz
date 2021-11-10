@@ -332,7 +332,7 @@
                     <navigationItem key="navigationItem" title="Результаты" id="j5K-so-utv">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="dqA-1S-dZu">
                             <connections>
-                                <segue destination="FPq-Kl-asS" kind="unwind" unwindAction="unwindFor:" id="EOZ-uT-zjp"/>
+                                <segue destination="FPq-Kl-asS" kind="unwind" unwindAction="unwindFor:" id="HPl-Em-sz5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
