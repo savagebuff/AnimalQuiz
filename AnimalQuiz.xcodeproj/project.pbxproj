@@ -15,6 +15,8 @@
 		2C5DF534273B377A00888E65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5DF532273B377A00888E65 /* LaunchScreen.storyboard */; };
 		2CC0F70F273BD5950086F647 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC0F70E273BD5950086F647 /* QuestionViewController.swift */; };
 		2CC0F711273BDC8F0086F647 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC0F710273BDC8F0086F647 /* FinalViewController.swift */; };
+		2CC0F713273BF0890086F647 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC0F712273BF0890086F647 /* Question.swift */; };
+		2CC0F715273BF0A00086F647 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC0F714273BF0A00086F647 /* Answer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		2C5DF535273B377A00888E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CC0F70E273BD5950086F647 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		2CC0F710273BDC8F0086F647 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+		2CC0F712273BF0890086F647 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		2CC0F714273BF0A00086F647 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		2C5DF53F273B3F0F00888E65 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2CC0F712273BF0890086F647 /* Question.swift */,
+				2CC0F714273BF0A00086F647 /* Answer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,6 +193,8 @@
 				2CC0F711273BDC8F0086F647 /* FinalViewController.swift in Sources */,
 				2C5DF52C273B377800888E65 /* ViewController.swift in Sources */,
 				2C5DF528273B377800888E65 /* AppDelegate.swift in Sources */,
+				2CC0F715273BF0A00086F647 /* Answer.swift in Sources */,
+				2CC0F713273BF0890086F647 /* Question.swift in Sources */,
 				2CC0F70F273BD5950086F647 /* QuestionViewController.swift in Sources */,
 				2C5DF52A273B377800888E65 /* SceneDelegate.swift in Sources */,
 			);
