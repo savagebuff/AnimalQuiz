@@ -21,9 +21,16 @@ class FinalViewController: UIViewController {
         navigationItem.hidesBackButton = true
 
         let mostFrequencyOfAnimal = getAnimal(from: answers)
+        
+        // MARK: whoIsYouLabel
         whoIsYouLabel.text = "Вы - \(mostFrequencyOfAnimal)!"
         
-        
+        // MARK: descriprionLabel
+        for answer in answers {
+            if (mostFrequencyOfAnimal == String(answer.type.rawValue)) {
+                descriptionLabel.text = String(answer.type.definition)
+            }
+        }
     }
 }
 

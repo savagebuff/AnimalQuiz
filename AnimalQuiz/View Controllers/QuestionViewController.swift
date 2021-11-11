@@ -116,8 +116,8 @@ extension QuestionViewController {
     private func showRangedStackView(with answers: [Answer]) {
         rangedStackView.isHidden = false
         
-        rangedLabels.first?.text = answers.first?.text
-        rangedLabels.last?.text = answers.last?.text
+        rangedLabels.first?.text = answers.last?.text
+        rangedLabels.last?.text = answers.first?.text
     }
     
     private func nextQuestion() {
