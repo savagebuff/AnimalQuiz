@@ -26,6 +26,7 @@ class QuestionViewController: UIViewController {
     @IBOutlet var rangedLabels: [UILabel]!
     @IBOutlet var multipleSwitches: [UISwitch]!
     
+    
     // MARK: Properties
     private let questions = Question.getQuestion()
     private var questionIndex = 0
@@ -126,6 +127,13 @@ extension QuestionViewController {
             updateUI()
             return
         }
+        
         performSegue(withIdentifier: "showResult", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destanationVC: FinalViewController = segue.destination as! FinalViewController
+        
+        destanationVC.answers = answerChoosen
     }
 }

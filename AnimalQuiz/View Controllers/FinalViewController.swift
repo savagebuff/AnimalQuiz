@@ -9,10 +9,20 @@ import UIKit
 
 class FinalViewController: UIViewController {
 
+    @IBOutlet var whoIsYouLabel: UILabel!
+    @IBOutlet var descriptionLabel: UILabel!
+    
+    // array with choosen answers
+    var answers: [Answer] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
+
+}
+
+extension FinalViewController {
+   
 }
