@@ -12,8 +12,8 @@ class QuestionViewController: UIViewController {
     @IBOutlet var progressView: UIProgressView!
     @IBOutlet var rangedSlider: UISlider! {
         didSet {
-            let answerCount = Float(currentAnswers.count - 1)
-            rangedSlider.value = answerCount
+            let answerCount = Float(questions[questionIndex].answers.count - 1)
+            rangedSlider.maximumValue = answerCount
         }
     }
     
@@ -26,7 +26,6 @@ class QuestionViewController: UIViewController {
     @IBOutlet var rangedLabels: [UILabel]!
     @IBOutlet var multipleSwitches: [UISwitch]!
     
-    
     // MARK: Properties
     private let questions = Question.getQuestion()
     private var questionIndex = 0
@@ -37,6 +36,7 @@ class QuestionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        rangedSlider.value = 0
        
         updateUI()
     }

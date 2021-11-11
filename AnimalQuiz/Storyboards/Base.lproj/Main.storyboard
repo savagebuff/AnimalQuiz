@@ -271,7 +271,7 @@
                         <outlet property="multipleStackView" destination="c6M-ac-n4q" id="L5O-H2-3Tg"/>
                         <outlet property="progressView" destination="WVx-KI-pMW" id="FYJ-ht-5Em"/>
                         <outlet property="questionLabel" destination="1HF-CQ-Orq" id="jcF-hz-zZw"/>
-                        <outlet property="rangedSlider" destination="PTz-O9-uie" id="aqq-O6-zDE"/>
+                        <outlet property="rangedSlider" destination="PTz-O9-uie" id="yaB-g9-9dk"/>
                         <outlet property="rangedStackView" destination="dMH-Fn-DWB" id="lVF-iN-S3G"/>
                         <outlet property="singleStackView" destination="3z9-K9-dfU" id="svn-P7-sgl"/>
                         <outletCollection property="singleButtons" destination="Zkf-fC-OyK" collectionClass="NSMutableArray" id="b7c-b3-iiw"/>
